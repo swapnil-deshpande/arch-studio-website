@@ -1,0 +1,183 @@
+/*
+Base Colors styles.
+ */
+$dark-blue:  #1B1D23;
+$dark-grey: #60636D;
+$medium-grey:  #7D828F;
+$light-grey: #C8CCD8;
+$very-light-grey: #EEEFF4;
+$red: #DF5656;
+
+/*
+Base Layout styles.
+ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* *::before *::after {
+    box-sizing: inherit;
+}
+
+body {
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: Spartan, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: left;
+}
+
+/*
+Typography styles.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0;
+    text-align: left;
+    color: $dark-grey;
+}
+
+h1.big-header {
+    font-family: 'Spartan', sans-serif;
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200px;
+    letter-spacing: -5px;
+    text-align: left;
+}
+
+
+
+h1.medium-header {
+    font-family: 'Spartan', sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -2px;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -2px;
+    text-align: left;
+}
+
+h3 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.white {
+    color: #fff;
+}
+
+.very-light-grey {
+    color: $very-light-grey;
+}
+
+.dark-blue {
+    color: $dark-blue;
+}
+
+.dark-grey {
+    color: $dark-grey;
+}
+
+.red {
+    color: $red;
+}
+
+@media screen and (max-width: 1300px) {
+    h1.big-header {
+        font-size: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1.medium-header {
+        font-family: 'Spartan', sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -1.2000000476837158px;
+        text-align: left;
+
+    }
+
+    h1.big-header {
+        display: none;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1.4285714626312256px;
+    }
+}
+
+/*
+Button styles.
+ */
+.button1 {
+    background: $dark-blue;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    width: 252px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.button1 svg {
+    margin-left: 20px;
+}
+
+.button1:hover {
+    transition: 0.3s ease-in-out;
+    background: $dark-grey;
+}
+
+.small-button1 {
+    width: 187px;
+    height: 72px;
+}
+
+.small-small-button1 {
+    width: 169px;
+    height: 72px;
+}

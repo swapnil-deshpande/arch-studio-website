@@ -1,0 +1,336 @@
+.contact-details {
+    width: 100%;
+    height: 212px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.contact-details::before {
+    content:'';
+    width: 65px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: -74px;
+    background-color: $light-grey;
+}
+
+.contact-details-title {
+    width: 370px;
+    height: 205px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contact-details-title h2:first-child {
+    width: 234px;
+    height: 112px;
+}
+
+.contact-office {
+    width: 370px;
+    height: 205px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.contact-office p:first-child {
+    font-weight: bold;
+    margin-bottom: 8px;
+    height: 35px;
+}
+
+.contact-office p:nth-child(2), .contact-office p:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+.contact-office p:nth-child(4) {
+    margin-bottom: 35px;
+}
+
+.contact-office a:last-child {
+    height: 25px;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    width: 157px;
+}
+
+.contact-office a:last-child:hover {
+    text-decoration: underline;
+    transition: 0.2s ease-in-out;
+}
+
+.contact-office a:last-child::before {
+    content:'';
+    background-image: url(../images/icons/icon-arrow-white.svg);
+    background-size: cover;
+    width: 24px;
+    height: 20px;
+    position: absolute;
+    top: 1px;
+    right: -5px;
+    z-index: 2;
+    transition: 0.2s ease-in-out;
+}
+
+.contact-office a:last-child:hover::before {
+    right: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width:1154px) {
+    .contact-details {
+        height: 456px;
+        justify-content: flex-start;
+        flex-flow: column nowrap;
+        margin-top: 275px;
+    }
+    
+    .contact-details-title {
+        width: 100%;
+        height: 56px;
+        align-items: flex-start;
+        margin-bottom: 64px;
+    }
+    
+    .contact-details-title h2:first-child {
+        width: 100%;
+        height: 56px;
+    }
+    
+    .contact-office {
+        width: 100%;
+        height: 148px;
+        position: relative;
+    }
+
+    .contact-office:nth-child(2) {
+        margin-bottom: 40px;
+    }
+    
+    .contact-office p:nth-child(4) {
+        margin-bottom: 0;
+    }
+    
+    .contact-office a:last-child {
+        height: 25px;
+        position: absolute;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        width: 157px;
+        bottom: 40px;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-details {
+        width: 91.4666666%;
+        margin: 100px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .contact-details {
+        height: 562px;
+        margin-top: 110px;
+    }
+    
+    .contact-details-title {
+        height: 96px;
+        margin-bottom: 48px;
+    }
+    
+    .contact-details-title h2:first-child {
+        width: 180px;
+        height: 96px;
+    }
+    
+    .contact-office {
+        height: 189px;
+        position: relative;
+    }
+
+    .contact-office p:nth-child(4) {
+        margin-bottom: 16px;
+    }
+    
+    .contact-office a:last-child {
+        height: 25px;
+        position: relative;
+        width: 157px;
+        bottom: unset;
+        right: unset;
+    }
+}
+
+#map {
+    width: 100%;
+    height: 560px;
+    margin-top: 200px;
+}
+
+.contact-form-section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 160px;
+}
+
+.form-title {
+    width: 380px;
+    height: 351px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.form-title h2:first-child {
+    width: 255px;
+    height: 112px;
+}
+
+.contact-form {
+    width: 730px;
+    height: 356px;
+    position: relative;
+}
+
+.form-section {
+    width: 100%;
+    height: 47px;
+    position: relative;
+    overflow: hidden;
+    margin: 19px 0;
+}
+
+.form-section:last-child {
+    margin-top: 70px;
+}
+
+.form-section input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: $dark-blue;
+    outline: none;
+    font-family: 'Spartan', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.3125px;
+}
+
+
+.form-section label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid $dark-blue;
+}
+
+.form-section label::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid $dark-blue;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-form {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    color: $light-grey;
+}
+
+.form-section input:focus + .label .content-form, 
+.form-section input:valid + .label .content-form {
+    opacity: 0;
+}
+
+.form-section input:focus + .label::after, 
+.form-section input:valid + .label::after {
+    transform: translateX(0%);
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
+
+#submit-button {
+    width: 80px;
+    height: 80px;
+    background-color: $dark-blue;
+    border: none;
+    position: relative;
+    display: flex;
+    top: -20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#submit-button:hover {
+    background-color: $dark-grey;
+    transition: 0.3s ease-in-out;
+}
+
+#submit-button::before {
+    content: '';
+    background-image: url(../images/icons/icon-arrow-white-white.svg);
+    background-size: cover;
+    width: 24px;
+    height: 18px;
+    position: relative;
+    left: 29px;
+    top: 29px;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-form-section {
+        width: 90%;
+        height: 430px;
+        flex-flow: column nowrap;
+    }
+    
+    .contact-form {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form-section {
+        width: 90%;
+        margin: 100px auto 0 auto;
+        height: 430px;
+        flex-flow: column nowrap;
+    }
+    
+    .contact-form {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+}

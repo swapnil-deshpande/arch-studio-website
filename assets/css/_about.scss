@@ -1,0 +1,331 @@
+.heritage-section {
+    margin-top: 200px;
+    width: 100%;
+    height: 568px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.heritage-section::before {
+    content: '';
+    background: #0000004C;
+    position: absolute;
+    width: 65px;
+    height: 1px;
+    top: 0;
+    left: 0;
+}
+
+.heritage-text {
+    width: 570px;
+    height: 568px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.heritage-wrap-text {
+    width: 446px;
+    height: 468px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+
+.heritage-wrap-text h2:first-child {
+    height: 136px;
+    width: 280px;
+}
+
+.heritage-wrap-text p:nth-child(2) {
+    margin-top: 32px;
+}
+
+.heritage-wrap-text p {
+    margin-top: 25px;
+}
+
+.heritage-image {
+    width: 540px;
+    height: 568px;
+    background-image: url(../images/about/desktop/image-heritage.jpg);
+}
+
+@media screen and (max-width: 1146px) {
+    .heritage-section {
+        height: 518px;
+    }
+    
+    .heritage-text {
+        width: 100%;
+        height: 518px;
+    }
+    
+    .heritage-wrap-text {
+        width: 100%;
+        height: 518px;
+        justify-content: center;
+    }
+    
+    .heritage-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heritage-section {
+        width: 91.46666%;
+        margin: 0 auto 0 auto;
+        height: 618px;
+    }
+
+    .heritage-section::before {
+        content: '';
+        background: #0000004C;
+        position: absolute;
+        width: 65px;
+        height: 1px;
+        top: 0;
+        left: 0;
+    }
+    
+    .heritage-text {
+        width: 100%;
+        height: 618px;
+    }
+    
+    .heritage-wrap-text {
+        width: 100%;
+        height: 550px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .heritage-wrap-text h2:first-child {
+        height: 96px;
+        width: 205px;
+    }
+    
+    .heritage-wrap-text p:nth-child(2) {
+        margin-top: 28px;
+    }
+    
+    .heritage-image {
+        display: none;
+    }
+}
+
+.leaders-section {
+    width: 100%;
+    height: 860px;
+    margin-top: 200px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.leaders-title {
+    width: 380px;
+    height: 860px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.leaders-title h2 {
+    width: 264px;
+    height: 112px;
+}
+
+.leaders-cards {
+    width: 730px;
+    height: 860px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leaders-card {
+    width: 350px;
+    height: 398px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.leaders-card-img {
+    width: 100%;
+    height: 320px;
+    position: relative; 
+}
+
+.leaders-card-img img {
+    width: 350px;
+    height: 320px;
+}
+
+.leaders-card-img-hover {
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 320px;
+    transition: 0.3s ease-in-out;
+}
+
+.leaders-card-img-hover:hover {
+    opacity: 1;
+    background-color: #0000007F;
+    transition: 0.3s ease-in-out;
+}
+
+.leaders-card-img-hover svg {
+    margin: 0 12px;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+}
+
+.leaders-card-img-hover #twitter {
+    filter: brightness(0.5) sepia(1) hue-rotate(140deg) saturate(6);
+}
+
+.leaders-card-img-hover #linkedin {
+    filter: brightness(0.2) sepia(1) hue-rotate(180deg) saturate(5);
+}
+
+.leaders-card h3:nth-child(2) {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1300px) {
+    .leaders-section {
+        width: 100%;
+        height: 988px;
+        margin-top: 175px;
+        flex-flow: column nowrap;
+    }
+    
+    .leaders-title {
+        width: 100%;
+        height: 176px;
+    }
+    
+    .leaders-cards {
+        width: 100%;
+        height: 812px;
+    }
+    
+    .leaders-card {
+        width: 280px;
+        height: 374px;
+    }
+    
+    .leaders-card-img {
+        height: 256px;
+    }
+    
+    .leaders-card-img img {
+        width: 280px;
+        height: 256px;
+    }
+    
+    .leaders-card-img-hover {
+        opacity: 1;
+        z-index: 1;
+        position: relative;
+        top: 68px;
+        background-color: #fff;
+        justify-content: flex-start;
+        width: 100%;
+        height: 40px;
+        transition: unset;
+    }
+    
+    .leaders-card-img-hover:hover {
+        background-color: #fff;
+        transition: unset;
+    }
+    
+    .leaders-card-img-hover svg {
+        z-index: 1;
+    }
+    
+    .leaders-card-img-hover #twitter {
+        filter: brightness(0.2) sepia(0) hue-rotate(180deg) saturate(5);
+        margin: 0;
+    }
+    
+    .leaders-card-img-hover #linkedin {
+        filter: brightness(0.2) sepia(0) hue-rotate(180deg) saturate(5);
+        margin-right: 24px;
+        margin-left: 0;
+    }
+    
+    .leaders-card h3:nth-child(2) {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .leaders-section {
+        width: 91.4666%;
+        height: 1896px;
+        margin: 0 auto 0 auto;
+    }
+    
+    .leaders-title {
+        height: 160px;
+    }
+
+    .leaders-title h2:first-child {
+        width: 176px;
+        height: 96px;
+    }
+    
+    .leaders-cards {
+        height: 1736px;
+        flex-flow: column nowrap;
+    }
+    
+    .leaders-card {
+        width: 311px;
+        height: 410px;
+    }
+    
+    .leaders-card-img {
+        height: 256px;
+    }
+    
+    .leaders-card-img img {
+        width: 311px;
+        height: 284px;
+    }
+    
+    .leaders-card-img-hover {
+        top: 60px;
+    }
+    
+    .leaders-card-img-hover:hover {
+        background-color: #fff;
+        transition: unset;
+    }
+    
+    .leaders-card h3:nth-child(2) {
+        margin-top: 40px;
+    }
+}
+
+
+@media screen and (max-width: 531px) {
+    .leaders-section {
+        margin: 72px auto 0px auto;
+    }
+}
